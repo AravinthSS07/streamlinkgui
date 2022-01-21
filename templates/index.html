@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Streamlink GUI_Client</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/uikit.min.css') }}" />
+
+        <div>
+            <nav class="uk-navbar-container" uk-navbar style="background-color: whitesmoke;">
+                <div class="uk-navbar-left">
+            
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="/">Streamlinkergui</a></li>
+                        <li><a href="https://github.com/AravinthSS07/streamlinkgui">Github</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+            
+                </div>
+            </nav>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/uikit.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/uikit-icons.min.js') }}"></script>
+
+    </head>
+
+    <body>
+
+        <div style="margin-top: 3pc; margin-left: 4pc; margin-right: 4pc; margin-bottom: 5pc;">
+
+            <form method="POST" action="{{ url_for('index') }}">
+                <fieldset class="uk-fieldset">
+            
+                    <legend class="uk-legend">Watch or Stream</legend>
+            
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Enter URL" name="url" required>
+                    </div>
+            
+                    <div class="uk-margin">
+                        <select class="uk-select" name="quality" required>
+                            <option selected>Select Quality</option>
+                            <option value="best">Best</option>
+                            <option value="worst">Worst</option>
+                            <!-- More Video Qualities
+                            <option value="1080p">1080p</option>
+                            <option value="720p">720p</option>
+                            <option value="480p">480p</option>
+                            -->
+                        </select>
+                    </div>
+
+                    <button class="uk-button uk-button-default" type="submit" name="action">Play Stream/Video</button>
+            
+                </fieldset>
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

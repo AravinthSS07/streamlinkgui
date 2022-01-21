@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Streamlink GUI_Client</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/uikit.min.css') }}" />
+
+        <div>
+            <nav class="uk-navbar-container" uk-navbar style="background-color: whitesmoke;">
+                <div class="uk-navbar-left">
+            
+                    <ul class="uk-navbar-nav">
+                        <li class="uk"><a href="/">Streamlinkergui</a></li>
+                        <li class="uk"><a href="https://github.com/AravinthSS07/streamlinkgui">Github</a></li>
+                        <li class="uk-active"><a href="#">About</a></li>
+                    </ul>
+            
+                </div>
+            </nav>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/uikit.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/uikit-icons.min.js') }}"></script>
+
+    </head>
+
+    <body>
+
+        <div style="margin-top: 3pc; margin-left: 4pc; margin-right: 4pc; margin-bottom: 5pc;">
+                        
+            <h1>This is a <strong>GUI Client</strong> for the open soruce project <a href="https://streamlink.github.io/">Streamlink</a></h1>
+            
+            <h3>Make sure you have Streamlink installed if not then download it from here!</h3> <a class="uk-button uk-button-default" href="https://streamlink.github.io/install.html">Download Streamlink</a>
+            
+            <h4><a href="https://streamlink.github.io/">(Streamlink)</a><a href="https://github.com/streamlink/streamlink" style="margin-left: 1pc;">(Streamlink GitHub)</a></h4>
+
+        </div>
+
+    </body>
+
+</html>
