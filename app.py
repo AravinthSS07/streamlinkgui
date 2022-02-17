@@ -23,4 +23,4 @@ def about():
 
 if __name__ == '__main__':
     #app.run(host='127.0.0.1', port=5000, debug=True)
-    init_gui(app, port=5000, width=952, height=530, window_title='Streamlink GUI Client')
+    init_gui(app, port=3884, width=952, height=530, window_title='Streamlink GUI Client')
